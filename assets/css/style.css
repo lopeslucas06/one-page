@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: baseline;
+    color: white;
+    font-family: "Mulish";
+}
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;    
+}
+/* Container do site */
+.container {
+    max-width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex; 
+    flex-direction: row;
+}
+/* End Container do site */
+
+/* Header do Site */
+header div{        
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;   
+    align-items: center;
+}
+
+header nav ul li{
+    margin:0px 7px;
+    font-size: 18px;
+    
+}
+
+header nav ul li a {
+    color: white;
+}
+header img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 100px;
+}
+
+
+.btn {
+    padding: 2px 15px;    
+    border: 1px solid rgba(255, 255, 255, 0.246);
+    border-radius: 100px;
+}
+
+.btn.btn-roxo {
+    background-color: rgb(10, 31, 54);
+}
+/* End Header do Site */
+
+/* Main do site */
+.developer-info {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.developer-info article h1 {
+    font-size: 50px;
+    margin-bottom: 50px; 
+    
+}
+.developer-info article h2 {
+    font-size: 30px;
+    margin-bottom: 10px;   
+    text-transform: uppercase; 
+    font-weight: 600;
+    font-style: italic;
+    
+}
+.developer-info article p {
+    margin-bottom: 40px;    
+    font-size: 18px;
+}
+
+.developer-info article h1,
+.developer-info article h2,
+.developer-info article p {
+    text-shadow: 2px 2px black;
+}
+
+.developer-info article {    
+    max-width: 500px;
+    
+}
+
+.developer-info figcaption img {
+    max-width: 400px;    
+}
+/* End Main do site */
+
+/* Footer do Site */
+footer {
+    align-items: center;
+    justify-content: space-between;
+}
+footer p{    
+    color: rgba(255, 255, 255, 0.294);
+    font-style: italic;        
+}
+footer ul li {    
+    margin: 0 10px 0 0;
+}
+
+footer ul li img {
+    max-width: 30px;
+}
+/* End Footer do Site */
+
+/* Responsivo do Site */
+@media (max-width:1900px){
+    .container{
+        max-width: 1280px;
+    }    
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1100px){
+    .container{
+        max-width: 900px;
+    }
+    .developer-info figcaption img {
+        max-width: 300px;    
+    }
+}
+
+@media (max-width: 960px){
+    .container{
+        max-width: 800px;
+    }
+    .row {
+        flex-direction: column;
+    }    
+    header img {
+        margin-bottom: 30px;
+    } 
+    .developer-info {        
+        text-align: center;
+    }   
+    .developer-info article {
+        margin-bottom: 20px;
+    }
+    
+    footer ul {
+        margin-bottom: 20px;
+    }
+
+    footer .row {
+        flex-direction: row;
+    }    
+}
+
+@media (max-width: 530px){
+    .container {
+        width: 350px;
+    }
+}
+
+@media (max-width: 420px){
+    .container {
+        width: 300px;
+    }
+}
+
+@media (max-width: 410px){
+    .container {
+        width: 300px;
+    }
+
+    header nav {
+        background-color: rgb(61, 61, 61);
+        width: 100%;
+        box-shadow:0px 10px 30px rgba(255, 255, 255, 0.15);
+    }
+    nav ul {
+        flex-direction: column;        
+        text-align: center;
+    }
+    nav ul li {
+        padding: 5px 0;
+    }
+    /* 
+    nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.466);       
+    }
+    nav ul li:first-child{
+        border-top: 1px solid rgba(255, 255, 255, 0.219); 
+    } 
+    nav ul li a{
+        display:block;
+        width: 100vw;    
+        margin: 0 auto;
+        padding: 5px 0;
+        background-color: rgb(10, 31, 54);
+        
+    }
+  
+    .btn {
+        border: none;
+        border-radius: 0px;
+        background-color: rgb(70, 70, 70) !important;
+    } */
+}
+@media (max-width: 310px){ 
+    .container {
+        width: 200px;
+    }
+}
